@@ -21,6 +21,12 @@ class Greet < Formula
     # 创建包装脚本，确保环境变量和路径正确
     (bin/"greet").write_env_script libexec/"greet", GREET_STORAGE: "#{libexec}/resources"
   end
+  
+  bottle do
+    root_url "https://github.com/ClopenSet/greet/releases/download/v0.1.0"
+    rebuild 1
+    sha256 cellar: :any, arm64_sequoia: "b92beb5d799a583c7bed233d074b846affd7c67719cc9aa745e348af4f018022"
+  end
 
   test do
     system "#{bin}/greet", "change", "Hello, Test!"
