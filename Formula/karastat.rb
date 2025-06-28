@@ -7,6 +7,12 @@ class Karastat < Formula
   depends_on "xcodegen" => :build
   depends_on :macos
 
+  bottle do
+    root_url "https://github.com/ClopenSet/KaraStat/releases/download/v1.0.1"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "e3aab6e811c4d8138edaede364897108ca03699b09d815ba2e64a4953944cdcf"
+  end
+  
   def install
     ENV.deparallelize
     system "make"
