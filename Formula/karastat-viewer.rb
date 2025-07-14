@@ -1,8 +1,8 @@
 class KarastatViewer < Formula
   desc "Keyboard heatmap viewer for KaraStat key logging data"
   homepage "https://github.com/ClopenSet/karastat-viewer"
-  url "https://github.com/ClopenSet/karastat-viewer/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "256b743bf98fff7a0d1a7eaff8cd3618f3fe50b8e674c94b2973f8ce6113376d"
+  url "https://github.com/ClopenSet/karastat-viewer/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "de48e07b951720b767b36f7427a7b83d8ce7e5f4d6c6effbeb4406097cd78e6f"
   license "Unlicense"
 
   depends_on "go" => :build
